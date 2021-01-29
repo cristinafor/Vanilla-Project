@@ -1,3 +1,60 @@
+body {
+  font-family: "Merriweather", serif;
+  color: #003049;
+
+  margin: 5%;
+}
 h1 {
-  color: blue;
+  font-weight: 100;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 5px;
+}
+li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0;
+}
+
+hr {
+  display: block;
+  margin: 0 auto;
+}
+footer {
+  text-align: center;
+}
+
+.weather-app {
+  border: 1.5px solid #003049;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 700px;
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+
+.search-form {
+  margin-bottom: 10px;
+}
+
+.weather-icon {
+  position: relative;
+}
+
+.temperature {
+  line-height: 1;
+  font-size: 75px;
+}
+
+.units {
+  position: relative;
+  top: -34px;
+}
+
+.precipitation-humidity-wind {
+  max-width: 200px;
+  margin-right: 0;
 }
