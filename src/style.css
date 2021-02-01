@@ -5,7 +5,7 @@ body {
   margin: 5%;
 }
 h1 {
-  font-weight: 100;
+  font-weight: 200;
 }
 
 ul {
@@ -58,6 +58,10 @@ footer {
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
+}
+
+.float-left {
+  float: left;
 }
 
 .current-temperature .units {
