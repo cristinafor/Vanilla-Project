@@ -13,7 +13,6 @@ ul {
   margin-bottom: 5px;
 }
 li {
-  text-transform: capitalize;
   list-style: none;
   font-weight: 400;
   font-size: 16px;
@@ -52,6 +51,10 @@ footer {
   font-size: 15px;
 }
 
+.description {
+  text-transform: capitalize;
+}
+
 .current-temperature img {
   margin-right: 5px;
   height: 64px;
@@ -75,7 +78,7 @@ footer {
   top: -32px;
 }
 
-.precipitation-humidity-wind {
+.feel-humidity-wind {
   max-width: 200px;
   margin-right: 0;
 }
