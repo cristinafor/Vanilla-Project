@@ -5,7 +5,7 @@ body {
   margin: 5%;
 }
 h1 {
-  font-weight: 200;
+  font-weight: 500;
 }
 
 ul {
@@ -13,6 +13,7 @@ ul {
   margin-bottom: 5px;
 }
 li {
+  text-transform: capitalize;
   list-style: none;
   font-weight: 400;
   font-size: 16px;
@@ -45,6 +46,10 @@ footer {
 
 .search-form {
   margin-bottom: 10px;
+}
+
+.btn {
+  font-size: 15px;
 }
 
 .current-temperature img {
