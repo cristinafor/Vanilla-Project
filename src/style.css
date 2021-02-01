@@ -28,30 +28,42 @@ footer {
 }
 
 .weather-app {
-  border: 1.5px solid #003049;
+  border: 1px solid #00669c;
   border-radius: 5px;
   padding: 15px;
   margin: 20px auto;
-  max-width: 700px;
-  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  max-width: 620px;
+  max-height: 1000px;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.bottom-line {
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
 }
 
 .search-form {
   margin-bottom: 10px;
 }
 
-.weather-icon {
-  position: relative;
+.current-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
 }
 
-.temperature {
+.current-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
   line-height: 1;
-  font-size: 75px;
+  font-weight: 400;
 }
 
-.units {
+.current-temperature .units {
   position: relative;
-  top: -34px;
+  font-size: 16px;
+  top: -32px;
 }
 
 .precipitation-humidity-wind {
