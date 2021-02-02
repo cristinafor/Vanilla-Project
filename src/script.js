@@ -21,7 +21,6 @@ function formatDate(timestamp) {
 
 
 function displayTemperature(response) {
-    console.log(response.data);
     let temperatureElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#city");
     let descriptionElement = document.querySelector("#description");
@@ -40,7 +39,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "aef208e4266d921b0a65e7200cab5d80";
-let city = "Berlin"
+let city = "Caracas";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 let units = "metric";
 
