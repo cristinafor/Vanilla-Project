@@ -16,7 +16,7 @@ function formatDate(timestamp) {
                 "Friday", 
                 "Saturday"];
     let day = days[date.getDay()];
-    return `${day} ${hours}:${minutes}`;
+    return `${day}, ${hours}:${minutes}`;
 }
 
 
@@ -39,7 +39,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "aef208e4266d921b0a65e7200cab5d80";
-let city = "Caracas";
+let city = "Berlin";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 let units = "metric";
 
