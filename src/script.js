@@ -53,7 +53,24 @@ function handleSubmit(event) {
     search(cityInput.value);
 }
 
-search("Berlin");
+function displayPosition(position) {
+  let apiKey = "aef208e4266d921b0a65e7200cab5d80";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentPosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(displayPosition);
+}
+
+
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
+
+let button = document.querySelector("#current-position");
+button.addEventListener("click", getCurrentPosition);
+
+search("Berlin");
