@@ -1,7 +1,6 @@
 body {
   font-family: "Merriweather", serif;
   color: #003049;
-
   margin: 5%;
 }
 h1 {
@@ -38,7 +37,6 @@ footer {
   margin: 20px auto;
   max-width: 600px;
   max-height: 1000px;
-  background-image: linear-gradient(-225deg, #20e2d7 0%, #f9fea5 100%);
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
@@ -53,8 +51,12 @@ footer {
 }
 
 .btn {
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
+}
+
+.btn .form-control {
+  padding: 0 15px;
 }
 
 .current-temperature img {
@@ -88,4 +90,40 @@ footer {
 .feel-humidity-wind {
   max-width: 200px;
   margin-right: 0;
+}
+
+.weather-forecast {
+  margin-top: 17px;
+}
+
+.weather-forecast h3 {
+  color: rgb(186, 186, 186);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.forecast-temp {
+  text-align: center;
+  color: rgb(135, 135, 135);
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
 }
