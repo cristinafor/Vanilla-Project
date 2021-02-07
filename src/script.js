@@ -65,6 +65,11 @@ function getCurrentPosition(event) {
   navigator.geolocation.getCurrentPosition(displayPosition);
 }
 
+function displayFahrenheitTemperature(event) {
+    event.preventDefault();
+    let fahrenheitTemperature = ((14 * 9)/5+ 32);
+    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
 
 
 let searchForm = document.querySelector("#search-form");
@@ -72,5 +77,8 @@ searchForm.addEventListener("submit", handleSubmit);
 
 let button = document.querySelector("#current-position");
 button.addEventListener("click", getCurrentPosition);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 search("Berlin");
