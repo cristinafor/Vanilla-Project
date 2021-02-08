@@ -49,6 +49,7 @@ function displayTemperature(response) {
 }
 
 function displayForecast(response) {
+    console.log(response.data)
     let forecastElement = document.querySelector("#forecast");
     forecastElement.innerHTML = null;
     let forecast = null;
@@ -71,7 +72,7 @@ function displayForecast(response) {
 
 function search(city) {
     let apiKey = "aef208e4266d921b0a65e7200cab5d80";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayTemperature);
 
     apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
